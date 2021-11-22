@@ -1,6 +1,6 @@
 # network settings
 B24_WEBHOOK_URL = 'https://ooonpplossew.bitrix24.ru/rest/24/pgjsx2de180p28qu/'
-TOKEN = 'iboboptkp2b80mroerd2kibot06aueh9'
+APP_TOKEN = 'e2ao3mpcgk8dz6mdynpqcvi3y7fiv8vp'
 
 #logger settings
 logger_config = {
