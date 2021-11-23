@@ -106,7 +106,6 @@ def update_b24_old_sale(id: int, sale: int) -> Dict:
 
 @app.route('/change_products_sale', methods=['POST', 'GET'])
 def change_products_sale():
-    #logger.debug(f'Request: {request}')
     logger.debug(f'Request url: {request.host_url}')
     logger.info('=== Start change product sales===')
     if request.method == 'POST':
@@ -123,6 +122,7 @@ def change_products_sale():
             set_deal_products(deal_id, saled_products)
             update_b24_old_sale(deal_id, sales['new'])
             logger.info('***Finish change product sales***')
+        logger.debug('*' * 150)
     return "ok"
 
 @app.route('/')
